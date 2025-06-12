@@ -1,3 +1,22 @@
+body.accueil-page {
+    background: linear-gradient(to bottom right, var(--couleur5), var(--couleur3));
+    /* ou une image : background-image: url('fond.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.accueil-page h1 {
+    font-size: 3rem;
+    color: var(--couleur1);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.accueil h1:hover {
+    transform: scale(1.05);
+}
+
 body, html{
     --couleur1: #1A4844;
     --couleur2: #37636A;
