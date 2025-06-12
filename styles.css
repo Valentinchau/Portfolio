@@ -9,6 +9,35 @@ body, html{
     font-family: var(--police);
 }
 
+.navbar {
+    background-color: var(--couleur2);
+    padding: 15px 0;
+    text-align: center;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--couleur3);
+    transition: background-color 0.3s;
+}
+
+.nav-list li a:hover {
+    background-color: var(--couleur4);
+}
+
 .titre_tete{
     margin: 0px;
     text-align: center;
@@ -21,7 +50,6 @@ body, html{
     display: flex;
     flex-direction: column;
     background-color: #709ab6;
-    margin-bottom:20px;
     
 }
 
@@ -43,35 +71,83 @@ body, html{
     display: flex;
     flex-direction: row;
     border-radius: 10px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    
-   
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
-.para-text p{
-    display: flex;
+.para-text p {
+    flex: 1;
     text-align: justify;
-    flex-direction: row;
-    width: 40%;
     background-color: whitesmoke;
-    padding:20px;
+    padding: 20px;
     border-radius: 10px;
-    
 }
 
-.para-text img{
+.para-text figure {
+    flex: 1;
     display: flex;
-    border: 1px solid black;
-    width: 70%;
-    height: 20%;
-    justify-content: center;
-    
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
 }
 
-.para-text figure{
-    display: block;
+.para-text img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.para-text figcaption {
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+    color: #333;
+}
+
+.image1 img {
+    max-width: 800px;
+}
+
+
+/* Barre de navigation */
+.navbar {
+    background-color: var(--couleur2);
+    padding: 15px 0;
+    text-align: center;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
     justify-content: center;
-    width: 50%;
-    
+    gap: 30px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--couleur3);
+    transition: background-color 0.3s;
+}
+
+.nav-list li a:hover {
+    background-color: var(--couleur4);
+}
+
+/* Section d'accueil */
+.accueil {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--couleur5);
+    color: #1a1a1a;
 }
