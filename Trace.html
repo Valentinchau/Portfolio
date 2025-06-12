@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="styles.css" rel="stylesheet">
+    </head>
+<body>
+    <header class="navbar">
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation.html">Présentation</a></li>
+        </ul>
+    </nav>
+</header>
+     <main>
+        <Section >
+            <!--titre de la page-->
+            <div class="entete">
+                <h1 class="titre_tete" id="titre_eco">Portfolio</h1>
+            </div>        
+        </Section>
+        
+        <section class="sthème">
+            <!--premier sous-thème Situation global-->
+            <h2 id="Situation_Global" class="sousTitre">Trace 1</h2>
+
+            <div class=partie>
+                
+                <div class="para-text">
+                      
+                    <p>
+                        La Figure 1 est une capture de l’interface d’Idea, concernant une classe de test unitaire que j’ai écrite dans le cadre d’une application Java, de type jeu de plateau.
+                        L’objectif d’une telle classe est de tester si les méthodes de l’application fonctionnent de la façon attendue. Cela consiste a appeler ces méthodes et vérifier que le résultat renvoyé, ou l’effet est conforme par rapport à la valeur des paramètres fournis à la méthode.
+                        Cela s’appelle vérifier un oracle.<br>
+                        Les test unitaires permettent de vérifier si des modifications dans une méthode la font « régresser », donc, qu’elle ne fonctionne plus correctement. 
+                        Le test unitaire est donc une brique fondamentale dans la maintenance et l’évolutivité logicielle.<br>
+                        Créer des test unitaires commence par déterminer quels sont les jeux de paramètres/oracle suffisants pour s’assurer qu’une méthode fait correctement son travail. 
+                        Il faut ensuite écrire du code permettant d’appeler cette méthode avec les jeux de paramètres et vérifier que le résultat correspond à l’oracle. 
+                        Cela fait donc appel à des compétences en développement, qui sont illustrées dans la partie droite de la Figure 1.
+                        Celle-ci présente un exemple de code utilisant les bibliothèques JUnit et Mockito afin d’écrire un test unitaire basique.<br>
+                        L’objectif de ce code est de vérifier si les méthodes de la classe créant le plateau du jeu fonctionne correctement.
+                        Lors que l’on lance le jeu, le constructeur est appelé pour créer le plateau du jeu.
+                        Le test vise à vérifier si le plateau créé est bien vide, si les fonctions pour récupérer la taille du plateau fonctionne.<br>  
+                        Pour cela, je commence par créer un « faux » état de jeu (nommé mock), grâce à la bibliothèque Mockito. J’obtiens ainsi un objet qui ressamble au plateau du vrai jeu, mais ce dernier est vides.
+                        Enfin, j’utilise l' instruction JUnit du type assertEquals() pour vérifier que les cellules du plateau ont bien été initialisés avec la boucle au dessus. 
+                        Il existe d’autres fonction assertXXX() pour vérifier si un résultat est nul, positif, négatif, ….<br>
+                        Dans le cas présent, la méthode assertEquals() a renvoyé une réponse positive, donc le test est passé, ce que l’on constate grâce à la vignette en bas à gauche de la figure 1.
+                        La couverture pourrait être améliorée en ajoutant des test à certaines méthodes. Malheureusement, cela ne peut être fait en se basant sur mes savoirs et savoir-faire actuels en JUnit et Mockito, qui restent relativement basiques.
+
+
+                    </p>
+                    <figure class="image1">
+                        <img src="Image/image1.png" alt="image1">
+                        <figcaption>Figure 1 : création de tests unitaires avec JUnit pour un jeu de plateau</figcaption>
+                    </figure>
+                </div>
+            </div>
+        
+            <div class="partie"><br>
+                <h2 id="Situation_Global" class="sousTitre">Trace 2</h2>
+                 <div class="para-text">
+                    
+                    <figure>
+                        <img src="Image/image2.png" alt="image2">
+                        <figcaption>Figure 2 : Résultat du lancement de l'application</figcaption>
+                    </figure>
+                    
+                    <p>
+                        La Figure 2 illustre l’interface texte du jeu Orbito++, développé en équipe dans le cadre d’un projet encadré. 
+                        Ce jeu a été conçu en Java en utilisant la bibliothèque boardifier-console, dédiée à la création de jeux de plateau.<br>
+                        Cette bibliothèque impose des contraintes techniques importantes, car elle ne fournit que des fonctionnalités minimales pour gérer l’état du jeu et afficher les grilles. 
+                        Elle repose donc fortement sur l’héritage pour permettre l’implémentation de jeux spécifiques.<br>
+                        Dans ce contexte, j’ai dû créer plusieurs sous-classes pour adapter le comportement du moteur de jeu à nos besoins. 
+                        Par exemple, j’ai redéfini une classe de gestion d’affichage afin de personnaliser l’apparence de l’une des trois grilles du jeu.<br> 
+                        Grâce à la redéfinition de méthodes (override), j’ai pu modifier l’affichage des bordures pour obtenir un visuel distinct, ce qui démontre l’utilisation correcte du polymorphisme : même si l’instance affichée est de ma sous-classe, elle est manipulée comme un objet générique par la bibliothèque.<br>
+                        J’ai également implémenté la saisie et la validation des ordres de jeu au clavier. Un ordre valide doit contenir une colonne et une ligne. 
+                        La vérification du format de saisie a nécessité l’utilisation de chaînes de caractères, de parcours conditionnels, ainsi que de tests logiques. <br>
+                        Il a également fallu implémenter un contrôle rigoureux des règles du jeu. Cette validation complexe a été encapsulée dans une méthode qui a été optimisée à plusieurs reprises pour en réduire la complexité et le temps d’exécution.<br>
+                        Ainsi, ce projet m’a permis de mobiliser et d'améliorée plusieurs savoirs et de savoir-faire. 
+                    </p>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
